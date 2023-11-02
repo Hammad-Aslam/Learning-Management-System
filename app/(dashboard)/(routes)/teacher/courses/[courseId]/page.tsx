@@ -19,7 +19,11 @@ import { PriceForm } from "./_components/price-form";
 import { AttachmentForm } from "./_components/attachment-form";
 import { ChaptersForm } from "./_components/chapters-form";
 import { Actions } from "./_components/actions";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Udemy Clone | Courses",
+  description: "Learning Managment System",
+};
 const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
   const { userId } = auth();
 

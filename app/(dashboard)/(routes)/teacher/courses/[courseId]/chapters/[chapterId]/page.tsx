@@ -10,7 +10,11 @@ import { ChapterAccessForm } from "./_components/chapter-access-form";
 import { ChapterVideoForm } from "./_components/chapter-video-form";
 import { Banner } from "@/components/banner";
 import { ChapterActions } from "./_components/chapter-actions";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Udemy Clone | Chapters",
+  description: "Learning Managment System",
+};
 const ChapterID = async ({
   params,
 }: {

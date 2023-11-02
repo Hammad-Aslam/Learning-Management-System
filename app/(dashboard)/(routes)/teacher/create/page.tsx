@@ -19,7 +19,11 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Udemy Clone | Course Create",
+  description: "Learning Managment System",
+};
 const formSchema = z.object({
   title: z.string().min(1, {
     message: "Title is required",

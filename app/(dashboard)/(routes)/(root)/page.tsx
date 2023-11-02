@@ -6,7 +6,11 @@ import { getDashboardCourses } from "@/actions/get-dashboard-courses";
 import { CoursesList } from "@/components/courses-list";
 
 import { InfoCard } from "./_components/info-card";
-
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Udemy Clone | Dashboard",
+  description: "Learning Managment System",
+};
 export default async function Dashboard() {
   const { userId } = auth();
 
