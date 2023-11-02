@@ -5,11 +5,6 @@ import { getAnalytics } from "@/actions/get-analytics";
 
 import { DataCard } from "./_components/data-card";
 import { Chart } from "./_components/chart";
-import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Udemy Clone | Analytics",
-  description: "Learning Managment System",
-};
 const AnalyticsPage = async () => {
   const { userId } = auth();
 
